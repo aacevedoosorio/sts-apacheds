@@ -1,0 +1,57 @@
+# LDIF file that adds demo users to the Apache DS directory
+
+dn: dc=stackstate,dc=com
+objectClass: extensibleObject
+objectClass: domain
+objectClass: top
+dc: stackstate
+
+dn: ou=employees,dc=stackstate,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: employees
+
+dn: cn=demoadmin,ou=employees,dc=stackstate,dc=com
+cn: demoadmin
+employeeType: IT Administrator
+givenName: Demo
+mail: demoadmin@stackstate.com
+o: StackState
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: top
+ou: Dev team
+sn: Admin
+uid: demoadmin
+userPassword: password
+
+dn: cn=demouser1,ou=employees,dc=stackstate,dc=com
+cn: demouser1
+employeeType: Staff Person
+givenName: Demo
+mail: demouser1@stackstate.com
+o: StackState
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: top
+ou: Dev team
+sn: User1
+uid: demouser1
+userPassword: password
+
+dn: cn=demouser2,ou=employees,dc=stackstate,dc=com
+cn: demouser2
+employeeType: Staff Person
+givenName: Demo
+mail: demouser2@stackstate.com
+o: StackState
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: top
+ou: Dev team
+sn: User2
+uid: demouser2
+userPassword: password
